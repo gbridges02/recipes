@@ -1,61 +1,87 @@
 * {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(158, 153, 153);
-    font-size: 24px;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    background-color: rgb(196, 105, 105);
 }
 
-h1 {
-    font-size: 96px;
+a:hover {
+    color: rgb(5, 8, 80);
 }
 
-h2 {
-    font-size: 48px;
+.recipe-list-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 400px;
+    text-align: center;
+    background-color: rgb(158, 153, 153);
+    border-radius: 10px;
+    border: 1px solid rgb(43, 38, 38);
 }
 
-p {
-    margin: 0;
+.recipe-list-container img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 12px 0;
 }
-
-.main-header {
-    padding: 92px 0 0 0;
-    margin: 0;
-}
-.menu-container {
-    width: fit-content;
-    margin: 0 auto;
-    text-align: left;
-}
-
 .recipe-list {
     list-style-type: none;
-    font-size: 48px;
-    text-align: center;
-    padding-inline-start: 0;
-    margin-top: 10px;
 }
 
 .recipe-list li {
-    padding-bottom: 10px;
+    font-size: 1rem;
+    margin: 8px;
+}
+
+.recipe-list-container h1 {
+    font-size: 2rem;
 }
 
 .recipe-container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-top: 10px;
+    margin: 2rem auto;
+    padding: 2rem;
+    width: 600px;
+    text-align: left;
+    background-color: rgb(158, 153, 153);
+    border-radius: 10px;
+    border: 1px solid rgb(43, 38, 38);
 }
 
-img {
+.recipe-container h1 {
+    margin: 8px auto;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.recipe-container h2 {
+    margin: 8px 0;
+    font-size: 1.25rem
+}
+
+.recipe-container img {
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    margin: 16px auto;
     display: block;
-    margin: 0 auto;
-    width: 500px;
 }
 
-.ingredients-list, .steps-list {
-    padding-inline-start: 20px;
+.recipe-container ul li, .recipe-container ol li {
+    margin: 8px 0;
+    list-style-position: inside;
+}
+
+.recipe-container ul ul {
+    padding-left: 20px;
 }
